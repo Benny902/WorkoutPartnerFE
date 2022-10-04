@@ -1,6 +1,6 @@
 {
-  "proxy": "https://benny902.github.io/WorkoutPartnerFE",
-  "homepage":"",
+  "proxy": "https://workoutpartners.herokuapp.com",
+  "homepage":"https://benny902.github.io/WorkoutPartnerFE",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
