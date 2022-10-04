@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.0d60e8e0.css",
-    "main.js": "/static/js/main.785279ec.js",
-    "index.html": "/index.html",
-    "main.0d60e8e0.css.map": "/static/css/main.0d60e8e0.css.map",
-    "main.785279ec.js.map": "/static/js/main.785279ec.js.map"
+    "main.css": "/WorkoutPartnerFE/static/css/main.0d60e8e0.css",
+    "main.js": "/WorkoutPartnerFE/static/js/main.785279ec.js",
+    "index.html": "/WorkoutPartnerFE/index.html",
+    "main.0d60e8e0.css.map": "/WorkoutPartnerFE/static/css/main.0d60e8e0.css.map",
+    "main.785279ec.js.map": "/WorkoutPartnerFE/static/js/main.785279ec.js.map"
   },
   "entrypoints": [
     "static/css/main.0d60e8e0.css",
