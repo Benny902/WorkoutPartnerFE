@@ -1,5 +1,5 @@
 {
-  "proxy": "https://workoutpartners.herokuapp.com",
+  "proxy": "https://workoutpartnersb.herokuapp.com",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,

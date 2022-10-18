@@ -6,6 +6,8 @@ import { useAuthContext } from "../hooks/useAuthContext"
 // components
 import WorkoutDetails from '../components/WorkoutDetails'
 import WorkoutForm from '../components/WorkoutForm'
+import Stopwatch from '../components/Stopwatch'
+import Countdown from '../components/Countdown'
 
 const Home = () => {
 
@@ -44,10 +46,21 @@ const Home = () => {
          handleClose={togglePopup} 
          />} 
          </div> */}
+         
+      <div style={{color: "#FF004E"}}>
+      <b>Rest&nbsp;Countdown</b>
+      <Countdown/>
+      </div>
 
-      
+      <div style={{color: "#00D084"}}>
+      <b>Total Workout</b>
+      <br></br>
+      <b>Stopwatch</b>
+      <Stopwatch/>
+      </div>
+
       <WorkoutForm />
-
+     
 
       <div className="workouts">
         {workouts && workouts.map((workout) => (

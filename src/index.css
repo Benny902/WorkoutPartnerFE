@@ -38,16 +38,34 @@ header a {
 .home {
   display: grid;
   grid-template-columns: 5fr 5fr; /*leftSize rightSize*/
-  gap: 100px;
+  padding: 20px;
 }
 
 @media screen and (min-width:652px) { /*Desktop*/
-  .home {gap: 100px}
+  .home {
+    row-gap: 10px;
+    column-gap: 100px;
+  }
   header .container {font-size: 18px;}
+  .stopwatch .numbers {
+    font-size: 30px;
+  }
+  .stopwatch .button {
+    font-size: 30px;
+  }
 }
 @media screen and (max-width:651px) { /*Phone*/
-  .home {gap: 20px}
+  .home {
+    row-gap: 10px;
+    column-gap: 20px;
+  }
   header .container {font-size: 10px;}
+  .stopwatch .numbers {
+    font-size: 30px;
+  }
+  .stopwatch button {
+    font-size: 10px;
+  }
 }
 
 
@@ -141,4 +159,22 @@ form.signup, form.login {
   padding: 20px;
   background: #fff;
   border-radius: 4px;
+}
+
+
+.Countdown-display button {
+  border: solid 1px transparent;
+  border-radius: 2px;
+  color: #000000;
+  font-size: 16px;
+}
+
+.Button-start, .Button-stop, .Button-reset, .Button-resume {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 5px;
+  margin-left: 2px;
+  border-radius: 4px;
+  cursor: pointer;
 }
