@@ -47,22 +47,26 @@ const Home = () => {
          />} 
          </div> */}
          
-      <div style={{color: "#FF004E"}}>
+         <div style={{textAlign: 'center'}}>
       <b>Rest&nbsp;Countdown</b>
       <Countdown/>
       </div>
 
-      <div style={{color: "#00D084"}}>
+      <div style={{textAlign: 'center'}}>
       <b>Total Workout</b>
-      <br></br>
+      <br/>
       <b>Stopwatch</b>
       <Stopwatch/>
       </div>
+
+      <div><hr /></div>
+      <div><hr /></div>
 
       <WorkoutForm />
      
 
       <div className="workouts">
+      <b>Workout List</b>
         {workouts && workouts.map((workout) => (
           <WorkoutDetails key={workout._id} workout={workout} />
         ))}

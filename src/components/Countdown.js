@@ -65,25 +65,25 @@ class Countdown extends Component {
     let minutes = ("0" + Math.floor((timerTime / 60000) % 60)).slice(-2);
 
     return (
-      <div className="Countdown">
+      <div style={{textAlign: 'center'}} className="Countdown">
         {/*<div style={{fontSize: "10px"}} className="Countdown-label">(Minutes : Seconds)</div>*/}
         <div className="Countdown-display">
-          <button style={{fontSize: "15px"}} onClick={() => this.adjustTimer("incMinutes")}>
-            &#8679;
+          <button style={{fontSize: "14px"}} onClick={() => this.adjustTimer("incMinutes")}>
+          &#8679;
           </button>
-          <button style={{fontSize: "15px"}} onClick={() => this.adjustTimer("incSeconds")}>
-            &#8679;
+          <button style={{fontSize: "14px"}} onClick={() => this.adjustTimer("incSeconds")}>
+          &nbsp;&nbsp;&nbsp;&#8679;
           </button>
 
-          <div className="Countdown-time">
-            {minutes} : {seconds}
+          <div style={{fontSize: "24.5px", color:'red'}} className="Countdown-time">
+            {minutes}:{seconds}
           </div>
 
-          <button style={{fontSize: "15px"}} onClick={() => this.adjustTimer("decMinutes")}>
-            &#8681;
+          <button style={{fontSize: "14px"}} onClick={() => this.adjustTimer("decMinutes")}>
+          &#8681;
           </button>
-          <button style={{fontSize: "15px"}}onClick={() => this.adjustTimer("decSeconds")}>
-            &#8681;
+          <button style={{fontSize: "14px"}}onClick={() => this.adjustTimer("decSeconds")}>
+          &nbsp;&nbsp;&nbsp;&#8681;
           </button>
         </div>
 

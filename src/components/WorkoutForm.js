@@ -52,8 +52,9 @@ const WorkoutForm = () => {
 
   return (
     <form className="create" onSubmit={handleSubmit}>
-      <h3>Add a New Workout</h3>
-
+     <b>Add a New Workout</b>
+       <br/>
+      <b style={{fontSize: '1px'}}>&nbsp;</b>
       <label>Exercise Title:</label>
       <input 
         type="text"

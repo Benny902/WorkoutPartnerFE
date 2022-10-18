@@ -23,6 +23,15 @@ header .container {
   align-items: center;
   justify-content: space-between;
 }
+header .container2 {
+  font-size: 16px;
+  max-width: 1400px;
+  margin: auto;
+  padding: 10px 20px;
+  display:inline;
+  align-items: center;
+  text-align: center;
+}
 header a {
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -46,12 +55,24 @@ header a {
     row-gap: 10px;
     column-gap: 100px;
   }
-  header .container {font-size: 18px;}
+  header .container {
+    font-size: 18px;
+  }
+  header .container2 {
+    font-size: 18px;
+  }
+  h1{
+    color:whitesmoke;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+  }
   .stopwatch .numbers {
     font-size: 30px;
   }
   .stopwatch .button {
     font-size: 30px;
+  }
+  label, input {
+    padding: 10px;
   }
 }
 @media screen and (max-width:651px) { /*Phone*/
@@ -59,7 +80,23 @@ header a {
     row-gap: 10px;
     column-gap: 20px;
   }
-  header .container {font-size: 10px;}
+  header .container {
+    font-size: 12px;
+  }
+  header .container2 {
+    font-size: 12px;
+  }
+  h1{
+    color:whitesmoke;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+  }
+  label, input {
+    font-size: 14px;
+    padding: 4px;
+  }
+  b{
+    font-size:14px;
+  }
   .stopwatch .numbers {
     font-size: 30px;
   }
@@ -103,7 +140,6 @@ label, input {
   display: block;
 }
 input {
-  padding: 10px;
   margin-top: 10px;
   margin-bottom: 20px;
   width: 100%;
@@ -137,6 +173,12 @@ nav {
   display: flex;
   align-items: center;
 }
+
+footer {
+  display: flex;
+  align-items: center;
+}
+
 nav a, nav button {
   margin-left: 10px;
 }
@@ -161,7 +203,6 @@ form.signup, form.login {
   border-radius: 4px;
 }
 
-
 .Countdown-display button {
   border: solid 1px transparent;
   border-radius: 2px;
@@ -177,4 +218,5 @@ form.signup, form.login {
   margin-left: 2px;
   border-radius: 4px;
   cursor: pointer;
+  width:40%;
 }

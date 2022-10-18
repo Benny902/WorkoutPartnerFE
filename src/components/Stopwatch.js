@@ -39,11 +39,12 @@ class Stopwatch extends Component {
     let minutes = ("0" + (Math.floor(timerTime / 60000) % 60)).slice(-2);
     let hours = ("0" + Math.floor(timerTime / 3600000)).slice(-2);
     return (
-      <div className="Stopwatch">
-        <div>‎</div>
-        <div className="Stopwatch-display">
-          {hours} : {minutes} : {seconds}
+      <div style={{textAlign: 'center'}}className="Stopwatch">
+        <div style={{fontSize: "1px"}}>&nbsp;</div>
+        <div style={{fontSize: "25px" , color:'#4CAF50'}} className="Stopwatch-display">
+          {hours}:{minutes}:{seconds}
         </div>
+        <div style={{fontSize: "15px"}}>&nbsp;</div>
         {this.state.timerOn === false && this.state.timerTime === 0 && (
           <button className="Button-start" onClick={this.startTimer}>Start</button>
         )}
