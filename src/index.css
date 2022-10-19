@@ -62,8 +62,8 @@ header a {
     font-size: 18px;
   }
   h1{
-    color:whitesmoke;
-    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    color:var(--primary);
+    /*-webkit-text-stroke: 1px rgb(0, 0, 0);*/
   }
   .stopwatch .numbers {
     font-size: 30px;
@@ -87,8 +87,8 @@ header a {
     font-size: 12px;
   }
   h1{
-    color:whitesmoke;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color:var(--primary);
+    /*-webkit-text-stroke: 1px rgb(0, 0, 0);*/
   }
   label, input {
     font-size: 14px;

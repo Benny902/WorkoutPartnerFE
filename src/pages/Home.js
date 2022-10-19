@@ -66,7 +66,7 @@ const Home = () => {
      
 
       <div className="workouts">
-      <b>Workout List</b>
+      <b>Exercises List</b>
         {workouts && workouts.map((workout) => (
           <WorkoutDetails key={workout._id} workout={workout} />
         ))}
