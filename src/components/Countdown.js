@@ -52,9 +52,9 @@ class Countdown extends Component {
       } else if (input === "decMinutes" && timerTime - 60000 >= 0) {
         this.setState({ timerTime: timerTime - 60000 });
       } else if (input === "incSeconds" && timerTime + 1000 < 216000000) {
-        this.setState({ timerTime: timerTime + 1000 });
+        this.setState({ timerTime: timerTime + 5000 });
       } else if (input === "decSeconds" && timerTime - 1000 >= 0) {
-        this.setState({ timerTime: timerTime - 1000 });
+        this.setState({ timerTime: timerTime - 5000 });
       }
     }
   };
