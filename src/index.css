@@ -3,17 +3,86 @@
 
 /* layout */
 :root {
-  --primary: #1195e2;
-  --error: #e7195a;
+  --myheader: rgb(174, 212, 228); /* header */
+  --primary: #1195e2; /* buttons and etc */
+  --error: #e7195a; /*error*/
+  --textcolor:black; /*text*/
+  --mycolor:#f1f1f1; /*background*/
+  --mycolor2:white; /*box's*/
+  --mycolor3:black; /*text inside excercise box*/
 }
 body {
-  background: #f1f1f1;
+  background: var(--mycolor);
   margin: 0;
   font-family: "Poppins";
+  color: var(--textcolor);
 }
+
+.navbutton {
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #f2f2f2;
+  background: rgba(147, 209, 236, 0);
+  border-radius: 10px;
+}
+
+.navbutton:hover {
+  color: var(--primary);
+}
+
+.dark-mode {
+  --primary: #1195e2; /* buttons and etc */
+  --error: #e7195a; /*error*/
+  --textcolor:#f1f1f1; /*text*/
+  --mycolor:rgb(17, 17, 17); /*background*/
+  --mycolor2:rgb(31, 31, 31); /*box's and input*/
+  --mycolor3:#f1f1f1; /*text inside excercise box*/
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: var(--mycolor2);
+  color: var(--textcolor3);
+}
+
+.arrows {
+  background-color: var(--mycolor);
+}
+
+.container .button {
+  color: red;
+  border: red;
+}
+
+.button2 {
+  background-color: #0000002d;
+  border: none;
+  color: var(--mycolor2);
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: -4px -2px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.button2:hover {
+  background-color: var(--mycolor3);
+  color: var(--mycolor3);
+  border-radius: 100%;
+}
+
 header {
-  background: rgb(174, 212, 228);
+  background: var(--myheader);
 }
+
 header .container {
   font-size: 16px;
   max-width: 1400px;
@@ -74,6 +143,12 @@ header a {
   label, input {
     padding: 10px;
   }
+  .navbutton {
+    font-size: 25px;
+  }
+  .button2 {
+    font-size: 25px;
+  }
 }
 @media screen and (max-width:651px) { /*Phone*/
   .home {
@@ -103,11 +178,17 @@ header a {
   .stopwatch button {
     font-size: 10px;
   }
+  .navbutton {
+    font-size: 15px;
+  }
+  .button2 {
+    font-size: 15px;
+  }
 }
 
 
 .workout-details {
-  background: #fff;
+  background: var(--mycolor2);
   border-radius: 4px;
   margin: 20px auto;
   padding: 20px;
@@ -122,17 +203,21 @@ header a {
 .workout-details p {
   margin: 0;
   font-size: 0.9em;
-  color: #555;
+  color: var(--mycolor3);
 }
 .workout-details span { /*trash can*/
   position: absolute;
   top: 20px;
   right: 20px;
   cursor: pointer;
-  background: #f1f1f1;
+  background: var(--mycolor2);
   padding: 6px;
   border-radius: 50%;
   color: rgb(180, 31, 31);
+}
+
+.workout-details span:hover { /*trash can*/
+  background-color: rgba(129, 31, 31, 0.493);
 }
 
 /* new workout form */
@@ -150,15 +235,20 @@ input {
 form button {
   background: var(--primary);
   border: 0;
-  color: #fff;
+  color: var(--mycolor2);
   padding: 10px;
   font-family: "Poppins";
   border-radius: 4px;
   cursor: pointer;
 }
+
+button:hover {
+  color: var(--mycolor3);
+}
+
 div.error {
   padding: 10px;
-  background: #ffefef;
+  background: var(--mycolor2);
   border: 1px solid var(--error);
   color: var(--error);
   border-radius: 4px;
@@ -184,9 +274,9 @@ nav a, nav button {
 }
 
 nav button {
-  background: #fff;
+  background: var(--mycolor2);
   color: var(--primary);
-  border: 2px solid var(--primary);
+  border: 2px solid rgba(255, 0, 0, 0);
   padding: 6px 10px;
   border-radius: 4px;
   font-family: "Poppins";
@@ -199,7 +289,7 @@ form.signup, form.login {
   max-width: 400px;
   margin: 40px auto;
   padding: 20px;
-  background: #fff;
+  background: var(--mycolor2);
   border-radius: 4px;
 }
 
@@ -213,10 +303,35 @@ form.signup, form.login {
 .Button-start, .Button-stop, .Button-reset, .Button-resume {
   background: var(--primary);
   border: 0;
-  color: #fff;
+  color: var(--mycolor2);
   padding: 5px;
   margin-left: 2px;
   border-radius: 4px;
   cursor: pointer;
   width:40%;
+}
+
+.bmi {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: var(--mycolor2);
+  border-radius: 4px;
+}
+
+.bmi {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: var(--mycolor2);
+  border-radius: 4px;
+}
+
+.music {
+  max-width: 100%;
+  padding: 10px;
+}
+
+.smalldiv{
+  font-size: 10px;
 }

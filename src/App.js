@@ -7,6 +7,9 @@ import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Bmi from './pages/Bmi'
+import Music from './pages/Music'
+import Water from './pages/Water'
 
 function App() {
   const { user } = useAuthContext()
@@ -29,6 +32,22 @@ function App() {
               path="/signup" 
               element={!user ? <Signup /> : <Navigate to="/" />} 
             />
+
+            <Route 
+              path="/bmi" 
+              element={!user ? <Bmi /> : <Bmi />} 
+            />
+
+            <Route 
+              path="/music" 
+              element={!user ? <Music /> : <Music />} 
+            />
+
+              <Route 
+              path="/water" 
+              element={!user ? <Water /> : <Water />} 
+            />
+
           </Routes>
         </div>
         <Footer />

@@ -68,22 +68,23 @@ class Countdown extends Component {
       <div style={{textAlign: 'center'}} className="Countdown">
         {/*<div style={{fontSize: "10px"}} className="Countdown-label">(Minutes : Seconds)</div>*/}
         <div className="Countdown-display">
-          <button style={{fontSize: "14px"}} onClick={() => this.adjustTimer("incMinutes")}>
-          &#8679;
+          <button className="arrows" style={{fontSize: "14px"}} onClick={() => this.adjustTimer("incMinutes")}>
+          🔼
           </button>
-          <button style={{fontSize: "14px"}} onClick={() => this.adjustTimer("incSeconds")}>
-          &nbsp;&nbsp;&nbsp;&#8679;
+          
+          <button className="arrows" style={{fontSize: "14px"}} onClick={() => this.adjustTimer("incSeconds")}>
+          🔼
           </button>
 
           <div style={{fontSize: "24.5px", color:'red'}} className="Countdown-time">
             {minutes}:{seconds}
           </div>
 
-          <button style={{fontSize: "14px"}} onClick={() => this.adjustTimer("decMinutes")}>
-          &#8681;
+          <button className="arrows" style={{fontSize: "14px"}} onClick={() => this.adjustTimer("decMinutes")}>
+          🔽
           </button>
-          <button style={{fontSize: "14px"}}onClick={() => this.adjustTimer("decSeconds")}>
-          &nbsp;&nbsp;&nbsp;&#8681;
+          <button className="arrows" style={{fontSize: "14px"}}onClick={() => this.adjustTimer("decSeconds")}>
+          🔽
           </button>
         </div>
 
