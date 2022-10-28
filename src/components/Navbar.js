@@ -45,6 +45,7 @@ const Navbar = () => {
              <Link className="navbutton" to="/bmi">BMI</Link>
              <Link className="navbutton" to="/music">Music</Link>
              <Link className="navbutton" to="/water">Water</Link>
+             <Link className="navbutton" to="/exer">Exercises</Link>
              &nbsp;&nbsp;
               <button className="button2" onClick={myFunction}>{buttonText}</button>
             </div>
@@ -62,6 +63,7 @@ const Navbar = () => {
              <Link className="navbutton" to="/bmi">BMI</Link>
              <Link className="navbutton" to="/music">Music</Link>
              <Link className="navbutton" to="/water">Water</Link>
+             <Link className="navbutton" to="/exer">Exercises</Link>
              &nbsp;&nbsp;
               <button className="button2" onClick={myFunction}>{buttonText}</button>
             </div>

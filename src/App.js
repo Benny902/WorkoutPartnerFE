@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 import Bmi from './pages/Bmi'
 import Music from './pages/Music'
 import Water from './pages/Water'
+import Exer from './pages/Exer'
 
 function App() {
   const { user } = useAuthContext()
@@ -46,6 +47,11 @@ function App() {
               <Route 
               path="/water" 
               element={!user ? <Water /> : <Water />} 
+            />
+
+              <Route 
+              path="/exer" 
+              element={!user ? <Exer /> : <Exer />} 
             />
 
           </Routes>

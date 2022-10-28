@@ -1,14 +1,14 @@
 
-import Water from '../components/Water'
+import Waters from '../components/Waters'
 
-const Login = () => {
+const Water = () => {
 
 
   return (
     <div className="bmi" >
-<Water/>
+<Waters/>
     </div>
   )
 }
 
-export default Login
+export default Water
