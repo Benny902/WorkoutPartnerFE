@@ -3,12 +3,14 @@ import ReactDOM from "react-dom";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "../index.css";
+import MyImage1 from '../assets/chest1.gif';
+
 
 class Exercises extends React.Component {
   render() {
     const images = [
       {
-        original: "http://d205bpvrqc9yn1.cloudfront.net/1274.gif",
+        original: MyImage1,
       },
       {
         original: "http://d205bpvrqc9yn1.cloudfront.net/0025.gif",
