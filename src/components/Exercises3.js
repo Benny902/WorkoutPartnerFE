@@ -3,21 +3,26 @@ import ReactDOM from "react-dom";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "../index.css";
+import MyImage1 from '../assets/arm1.gif';
+import MyImage2 from '../assets/arm2.gif';
+import MyImage3 from '../assets/arm3.gif';
+import MyImage4 from '../assets/arm4.gif';
+
 
 class Exercises extends React.Component {
   render() {
     const images = [
       {
-        original: "http://d205bpvrqc9yn1.cloudfront.net/0976.gif",
+        original: MyImage1,
       },
       {
-        original: "http://d205bpvrqc9yn1.cloudfront.net/0031.gif",
+        original: MyImage2,
       },
       {
-        original: "http://d205bpvrqc9yn1.cloudfront.net/0998.gif",
+        original: MyImage3,
       },
       {
-        original: "http://d205bpvrqc9yn1.cloudfront.net/0129.gif",
+        original: MyImage4,
       },
     ];
 

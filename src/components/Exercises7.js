@@ -4,20 +4,26 @@ import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "../index.css";
 
+import MyImage1 from '../assets/cardio1.gif';
+import MyImage2 from '../assets/cardio2.gif';
+import MyImage3 from '../assets/cardio3.gif';
+import MyImage4 from '../assets/cardio4.gif';
+
+
 class Exercises extends React.Component {
   render() {
     const images = [
       {
-        original: "http://d205bpvrqc9yn1.cloudfront.net/3220.gif",
+        original: MyImage1,
       },
       {
-        original: "http://d205bpvrqc9yn1.cloudfront.net/1160.gif",
+        original: MyImage2,
       },
       {
-        original: "http://d205bpvrqc9yn1.cloudfront.net/0501.gif",
+        original: MyImage3,
       },
       {
-        original: "http://d205bpvrqc9yn1.cloudfront.net/2612.gif",
+        original: MyImage4,
       },
     ];
 
