@@ -4,6 +4,9 @@ import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "../index.css";
 import MyImage1 from '../assets/chest1.gif';
+import MyImage2 from '../assets/chest2.gif';
+import MyImage3 from '../assets/chest3.gif';
+import MyImage4 from '../assets/chest4.gif';
 
 
 class Exercises extends React.Component {
@@ -13,13 +16,13 @@ class Exercises extends React.Component {
         original: MyImage1,
       },
       {
-        original: "http://d205bpvrqc9yn1.cloudfront.net/0025.gif",
+        original: MyImage2,
       },
       {
-        original: "http://d205bpvrqc9yn1.cloudfront.net/0155.gif",
+        original: MyImage3,
       },
       {
-        original: "http://d205bpvrqc9yn1.cloudfront.net/0188.gif",
+        original: MyImage4,
       },
     ];
 
