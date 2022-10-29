@@ -335,3 +335,13 @@ form.signup, form.login {
 .smalldiv{
   font-size: 10px;
 }
+
+.mygallery {
+  font-family: sans-serif;
+  text-align: center;
+  max-width: 400px;
+  margin:  auto;
+  padding: 2px;
+  background: var(--mycolor2);
+  border-radius: 4px;
+}

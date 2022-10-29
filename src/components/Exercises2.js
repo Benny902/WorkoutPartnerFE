@@ -8,16 +8,16 @@ class Exercises extends React.Component {
   render() {
     const images = [
       {
-        original: "http://d205bpvrqc9yn1.cloudfront.net/1274.gif",
+        original: "http://d205bpvrqc9yn1.cloudfront.net/0205.gif",
       },
       {
-        original: "http://d205bpvrqc9yn1.cloudfront.net/0025.gif",
+        original: "http://d205bpvrqc9yn1.cloudfront.net/0177.gif",
       },
       {
-        original: "http://d205bpvrqc9yn1.cloudfront.net/0155.gif",
+        original: "http://d205bpvrqc9yn1.cloudfront.net/0180.gif",
       },
       {
-        original: "http://d205bpvrqc9yn1.cloudfront.net/0188.gif",
+        original: "http://d205bpvrqc9yn1.cloudfront.net/0292.gif",
       },
     ];
 
