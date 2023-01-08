@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
 import Navbar from './components/Navbar'
+import Navbar2 from './components/Navbar2'
 import Footer from './components/Footer'
 import Bmi from './pages/Bmi'
 import Music from './pages/Music'
@@ -18,7 +19,12 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <div className="nav">
         <Navbar />
+      </div>
+      <div className="nav2">
+      <Navbar2 />
+      </div>
         <div className="pages">
           <Routes>
             <Route 
