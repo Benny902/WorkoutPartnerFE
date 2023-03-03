@@ -108,8 +108,7 @@ input {
 }
 
 .arrows {
-  background-color: aqua;
-  /*background-color: var(--myheader);*/
+  background-color: var(--myheader);
 }
 
 .container .button {
