@@ -354,6 +354,7 @@ div.error {
   color: var(--error);
   border-radius:50% ;
   margin: 20px 0;
+  text-align: center;
 }
 input.error {
   border: 1px solid var(--error);
