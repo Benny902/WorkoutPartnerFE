@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { useLogout } from '../hooks/useLogout'
 import { useAuthContext } from '../hooks/useAuthContext'
 import {useState} from 'react';
-
+import ShowHide from './ShowHide';
 
 
 const Navbar = () => {
@@ -33,7 +33,9 @@ const Navbar = () => {
         <Link to="/">
           <h1 >Workout&nbsp;Partner</h1>
           <button className="button2" onClick={myFunction}>{buttonText}</button>
+          <ShowHide style={{cursor:'pointer'}}/>
         </Link>
+
         <nav>
           {user && (
             <div>
@@ -70,8 +72,11 @@ const Navbar = () => {
             </div>
           )}
         </nav>
+        
       </div>
+    
     </header>
+    
   )
 }
 

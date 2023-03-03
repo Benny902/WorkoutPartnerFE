@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { useLogout } from '../hooks/useLogout'
 import { useAuthContext } from '../hooks/useAuthContext'
 import {useState} from 'react';
-
+import ShowHide from './ShowHide';
 // mobile navbar
 
 const Navbar2 = () => {
@@ -38,7 +38,7 @@ const Navbar2 = () => {
         </div>
       </a>
       <button className="button2" onClick={myFunction}>{buttonText}</button>
-      &nbsp;
+      <ShowHide style={{cursor:'pointer'}}/>
       <div href="#" className="toggle-button" onClick={Click}>
         <span className="bar"></span>
         <span className="bar"></span>

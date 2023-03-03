@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-
+import NotificationSound from "./notification-sound.mp3";
+const delay = ms => new Promise(res => setTimeout(res, ms));
 class Countdown extends Component {
   state = {
     timerOn: false,
@@ -13,7 +14,7 @@ class Countdown extends Component {
       timerTime: this.state.timerTime,
       timerStart: this.state.timerTime
     });
-    this.timer = setInterval(() => {
+    this.timer = setInterval(async () => {
       const newTime = this.state.timerTime - 10;
       if (newTime >= 0) {
         this.setState({
@@ -22,8 +23,10 @@ class Countdown extends Component {
       } else {
         clearInterval(this.timer);
         this.setState({ timerOn: false });
-        new Audio("./notification-sound.mp3").play();
+        (new Audio(NotificationSound)).play()
+        await delay(1000);
         alert("Rest Countdown Ended");
+        
       }
     }, 10);
   };
@@ -67,6 +70,7 @@ class Countdown extends Component {
     return (
       <div style={{textAlign: 'center'}} className="Countdown">
         {/*<div style={{fontSize: "10px"}} className="Countdown-label">(Minutes : Seconds)</div>*/}
+        <b>Rest&nbsp;Countdown</b>
         <div className="Countdown-display">
           <button className="arrows" style={{fontSize: "14px"}} onClick={() => this.adjustTimer("incMinutes")}>
           🔼
@@ -76,7 +80,7 @@ class Countdown extends Component {
           🔼
           </button>
 
-          <div style={{fontSize: "24.5px", color:'red'}} className="Countdown-time">
+          <div style={{fontSize: "22px", color:'red',padding:'0px'}} className="Countdown-time">
             {minutes}:{seconds}
           </div>
 

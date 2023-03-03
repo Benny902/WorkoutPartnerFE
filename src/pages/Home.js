@@ -48,20 +48,9 @@ const Home = () => {
          />} 
          </div> */}
          
-         <div style={{textAlign: 'center'}}>
-      <b>Rest&nbsp;Countdown</b>
-      <Countdown/>
-      </div>
-    
-      <div style={{textAlign: 'center'}}>
-      <b>Total Workout</b>
-      <br/>
-      <b>Stopwatch</b>
-      <Stopwatch/>
-      </div>
 
-      <div><hr /></div>
-      <div><hr /></div>
+
+
 
       <WorkoutForm />
      

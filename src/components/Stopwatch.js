@@ -40,6 +40,7 @@ class Stopwatch extends Component {
     let hours = ("0" + Math.floor(timerTime / 3600000)).slice(-2);
     return (
       <div style={{textAlign: 'center'}}className="Stopwatch">
+      <b>Total Workout Stopwatch</b>
         <div style={{fontSize: "1px"}}>&nbsp;</div>
         <div style={{fontSize: "25px" , color:'#4CAF50'}} className="Stopwatch-display">
           {hours}:{minutes}:{seconds}
