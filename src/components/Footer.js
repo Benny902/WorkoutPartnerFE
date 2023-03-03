@@ -8,9 +8,8 @@ const Footer = () => {
     <header>
       <div className="container2">
       <div className="footer">
-        App for our graduation thesis
-        - By: Benny & Ruslan 
-        
+        Created by: Benny & Ruslan 
+        <br/> This web app is part of our graduation thesis
         <br/>
         
         <a href={"https://github.com/Benny902/WorkoutPartner"}>&nbsp;Github</a>

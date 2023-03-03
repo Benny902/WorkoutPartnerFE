@@ -7,15 +7,15 @@ import {useState} from 'react';
 
 const Navbar2 = () => {
 
-  const [buttonText, setButtonText] = useState('🌚');
+  const [buttonText, setButtonText] = useState('  🌘');
   function myFunction() {
     var element = document.body;
     element.classList.toggle("dark-mode");
-    if (buttonText === '🌚'){
-      setButtonText('🌞');
+    if (buttonText === '  🌘'){
+      setButtonText('🌖  ');
     }
-    if (buttonText==='🌞'){
-      setButtonText('🌚');
+    if (buttonText==='🌖  '){
+      setButtonText('  🌘');
     }
         
   }
@@ -37,6 +37,8 @@ const Navbar2 = () => {
           <h1>Workout&nbsp;Partner</h1>
         </div>
       </a>
+      <button className="button2" onClick={myFunction}>{buttonText}</button>
+      &nbsp;
       <div href="#" className="toggle-button" onClick={Click}>
         <span className="bar"></span>
         <span className="bar"></span>
@@ -47,13 +49,9 @@ const Navbar2 = () => {
         {user && (
             <div>
               <ul>
-              
-              <li>
               <span>{user.email}</span>
-              <hr/>
               <button className="navbutton" onClick={handleClick}>Log out</button>
-              </li>
-              <button className="button2" onClick={myFunction}>{buttonText}</button>
+              ⸻⸻⸻
              <Link className="navbutton" to="/">Home</Link>
              <Link className="navbutton" to="/bmi">BMI</Link>
              <Link className="navbutton" to="/music">Music</Link>
@@ -72,7 +70,6 @@ const Navbar2 = () => {
               <hr/>
 
               <ul>
-              <button className="button2" onClick={myFunction}>{buttonText}</button>
              <Link className="navbutton" to="/">Home</Link>
              <Link className="navbutton" to="/bmi">BMI</Link>
              <Link className="navbutton" to="/music">Music</Link>

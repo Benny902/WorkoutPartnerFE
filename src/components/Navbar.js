@@ -7,15 +7,15 @@ import {useState} from 'react';
 
 const Navbar = () => {
 
-  const [buttonText, setButtonText] = useState('🌚');
+  const [buttonText, setButtonText] = useState('  🌘');
   function myFunction() {
     var element = document.body;
     element.classList.toggle("dark-mode");
-    if (buttonText === '🌚'){
-      setButtonText('🌞');
+    if (buttonText === '  🌘'){
+      setButtonText('🌖  ');
     }
-    if (buttonText==='🌞'){
-      setButtonText('🌚');
+    if (buttonText==='🌖  '){
+      setButtonText('  🌘');
     }
         
   }
@@ -32,6 +32,7 @@ const Navbar = () => {
       <div className="container">
         <Link to="/">
           <h1 >Workout&nbsp;Partner</h1>
+          <button className="button2" onClick={myFunction}>{buttonText}</button>
         </Link>
         <nav>
           {user && (
@@ -47,7 +48,7 @@ const Navbar = () => {
              <Link className="navbutton" to="/water">Water</Link>
              <Link className="navbutton" to="/exer">Exercises</Link>
              &nbsp;&nbsp;
-              <button className="button2" onClick={myFunction}>{buttonText}</button>
+              
             </div>
           )}
           {!user && (
@@ -65,7 +66,7 @@ const Navbar = () => {
              <Link className="navbutton" to="/water">Water</Link>
              <Link className="navbutton" to="/exer">Exercises</Link>
              &nbsp;&nbsp;
-              <button className="button2" onClick={myFunction}>{buttonText}</button>
+              
             </div>
           )}
         </nav>
