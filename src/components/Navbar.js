@@ -41,9 +41,8 @@ const Navbar = () => {
             <div>
               <span>{user.email}</span>
               <button className="navbutton" onClick={handleClick}>Log out</button>
-              <div className='smalldiv'>&nbsp;</div>
-              &nbsp;
-              <hr/>
+              <hr style={{border: 0, width: 0.1,height: 50}} />
+              
              <Link className="navbutton" to="/">Home</Link>
              <Link className="navbutton" to="/bmi">BMI</Link>
              <Link className="navbutton" to="/music">Music</Link>
@@ -57,10 +56,10 @@ const Navbar = () => {
             <div>
               
               <Link className="navbutton" to="/login">Login</Link>
-              <Link className="navbutton" to="/signup">Signup</Link>
-              <div>&nbsp;</div>
-              <hr style={{borderColor: 'transparent'}}/>
-              <hr/>
+              <Link className="navbutton" to="/signup">Signup </Link>
+              
+              <hr style={{border: 0, width: 0.1,height: 50}} />
+              
 
              <Link className="navbutton" to="/">Home</Link>
              <Link className="navbutton" to="/bmi">BMI</Link>

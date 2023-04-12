@@ -37,8 +37,7 @@ const Navbar2 = () => {
           <h1>Workout&nbsp;Partner</h1>
         </div>
       </a>
-      <button className="button2" onClick={myFunction}>{buttonText}</button>
-      <ShowHide style={{cursor:'pointer'}}/>
+      
       <div href="#" className="toggle-button" onClick={Click}>
         <span className="bar"></span>
         <span className="bar"></span>
@@ -49,8 +48,10 @@ const Navbar2 = () => {
         {user && (
             <div>
               <ul>
-              <span>{user.email}</span>
-              <button className="navbutton" onClick={handleClick}>Log out</button>
+              <button className="button2" onClick={myFunction}>{buttonText}</button>
+              <ShowHide style={{cursor:'pointer'}}/>
+              ⸻⸻⸻
+              <span>{user.email}<button className="navbutton" onClick={handleClick}>Log out</button></span>
               ⸻⸻⸻
              <Link className="navbutton" to="/">Home</Link>
              <Link className="navbutton" to="/bmi">BMI</Link>
@@ -62,14 +63,14 @@ const Navbar2 = () => {
           )}
           {!user && (
             <div>
-              
+            
+              <ul>
+              <button className="button2" onClick={myFunction}>{buttonText}</button>
+              <ShowHide style={{cursor:'pointer'}}/>
+             <div>⸻⸻⸻</div>
               <Link className="navbutton" to="/login">Login</Link>
               <Link className="navbutton" to="/signup">Signup</Link>
-              <div>&nbsp;</div>
-              <hr style={{borderColor: 'transparent'}}/>
-              <hr/>
-
-              <ul>
+              <div>⸻⸻⸻</div>
              <Link className="navbutton" to="/">Home</Link>
              <Link className="navbutton" to="/bmi">BMI</Link>
              <Link className="navbutton" to="/music">Music</Link>
