@@ -3,7 +3,7 @@ import { useLogout } from '../hooks/useLogout'
 import { useAuthContext } from '../hooks/useAuthContext'
 import {useState} from 'react';
 import ShowHide from './ShowHide';
-
+import Logo from "../assets/workoutpartnerlogo.png";
 
 const Navbar = () => {
 
@@ -30,12 +30,14 @@ const Navbar = () => {
   return (
     <header>
       <div className="container">
-        <Link to="/">
+      <div className="container">
+      <img src={Logo} alt="logo" className="photo" style={{width: 110,height: 110}}/>
+        <Link to="/">  
           <h1 >Workout&nbsp;Partner</h1>
           <button className="button2" onClick={myFunction}>{buttonText}</button>
           <ShowHide style={{cursor:'pointer'}}/>
         </Link>
-
+        </div>
         <nav>
           {user && (
             <div>

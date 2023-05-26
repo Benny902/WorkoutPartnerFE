@@ -88,11 +88,12 @@ body {
 }
 
 .dark-mode {
-  --primary: #1195e2; /* buttons and etc */
+  --myheader: rgba(174, 212, 228, 0.85); /* header */
+  --primary: #0974b3; /* buttons and etc */
   --error: #e7195a; /*error*/
   --textcolor:#f1f1f1; /*text*/
-  --mycolor:rgb(17, 17, 17); /*background*/
-  --mycolor2:rgb(31, 31, 31); /*box's and input*/
+  --mycolor:rgb(24, 24, 24); /*background*/
+  --mycolor2:rgb(19, 19, 19); /*box's and input*/
   --mycolor3:#f1f1f1; /*text inside excercise box*/
   transition: 0.5s;
 }
@@ -173,7 +174,7 @@ header .container {
   padding: 10px 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 header .container2 {
   font-size: 16px;
@@ -317,7 +318,7 @@ header a {
     margin: 1px;
     padding: 1px;
     position: relative;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
   }
 }
 
@@ -328,7 +329,7 @@ header a {
   margin: 20px auto;
   padding: 20px;
   position: relative;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
 }
 .workout-details h4 {
   margin: 0 0 10px 0;
@@ -475,4 +476,10 @@ form.signup, form.login {
   padding: 2px;
   background: var(--mycolor2);
   border-radius: 55px;
+}
+
+
+.photo {
+  margin-right: 20px;
+  filter: sepia(1%) saturate(1%) brightness(999%) hue-rotate(1deg);
 }
