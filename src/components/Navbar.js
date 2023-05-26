@@ -31,8 +31,8 @@ const Navbar = () => {
     <header>
       <div className="container">
       <Link to="/"> 
-      <img src={Logo} alt="logo" className="photo" style={{marginRight: 11, width: 60,height: 60}}/>
-      <figcaption style={{marginLeft: -5}}><button className="button2" onClick={myFunction}>{buttonText}</button></figcaption>
+      <img src={Logo} alt="logo" className="photo" style={{marginRight: 11, width: 80,height: 57}}/>
+      <figcaption style={{marginLeft: 4}}><button className="button2" onClick={myFunction}>{buttonText}</button></figcaption>
       </Link>
        
         <Link to="/">  
