@@ -30,27 +30,30 @@ const Navbar = () => {
   return (
     <header>
       <div className="container">
-      <div className="container">
-      <img src={Logo} alt="logo" className="photo" style={{marginRight: 40, width: 110,height: 110}}/>
+      <Link to="/"> 
+      <img src={Logo} alt="logo" className="photo" style={{marginRight: 11, width: 60,height: 60}}/>
+      <figcaption style={{marginLeft: -5}}><button className="button2" onClick={myFunction}>{buttonText}</button></figcaption>
+      </Link>
+       
         <Link to="/">  
-          <h1 >Workout&nbsp;Partner</h1>
-          <button className="button2" onClick={myFunction}>{buttonText}</button>
+          <h1 style={{marginRight: 20}}>Workout&nbsp;Partner</h1>
           <ShowHide style={{cursor:'pointer'}}/>
         </Link>
-        </div>
+        <hr style={{border: 0, width: 31.1,height: 0.1}} />
         <nav>
           {user && (
             <div>
-              <span>{user.email}</span>
-              <button className="navbutton" onClick={handleClick}>Log out</button>
-              <hr style={{border: 0, width: 0.1,height: 50}} />
-              
+             <span>{user.email}</span>
+            <button className="navbutton2" onClick={handleClick}>Log out</button>
+              <hr style={{border: 0, width: 0.1,height: 31}} />
              <Link className="navbutton" to="/">Home</Link>
              <Link className="navbutton" to="/bmi">BMI</Link>
              <Link className="navbutton" to="/music">Music</Link>
              <Link className="navbutton" to="/water">Water</Link>
              <Link className="navbutton" to="/exer">Exercises</Link>
+             
              &nbsp;&nbsp;
+             
               
             </div>
           )}
