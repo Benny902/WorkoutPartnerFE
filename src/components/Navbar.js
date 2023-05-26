@@ -30,15 +30,20 @@ const Navbar = () => {
   return (
     <header>
       <div className="container">
-      <Link to="/"> 
-      <img src={Logo} alt="logo" className="photo" style={{marginRight: 11, width: 80,height: 57}}/>
-      <figcaption style={{marginLeft: 4}}><button className="button2" onClick={myFunction}>{buttonText}</button></figcaption>
+      <Link to="/">
+      <img src={Logo} alt="logo" className="photo" style={{marginRight: 11, width: 90,height: 90}}/>
       </Link>
-       
-        <Link to="/">  
+      
+      <Link to="/">  
           <h1 style={{marginRight: 20}}>Workout&nbsp;Partner</h1>
-          <ShowHide style={{cursor:'pointer'}}/>
         </Link>
+     
+     <Link to="/">
+      <figcaption style={{marginLeft: 4}}><button className="button2" onClick={myFunction}>{buttonText}</button></figcaption>
+     <ShowHide style={{cursor:'pointer'}}/>
+     </Link>
+      
+       
         <hr style={{border: 0, width: 31.1,height: 0.1}} />
         <nav>
           {user && (
@@ -51,6 +56,8 @@ const Navbar = () => {
              <Link className="navbutton" to="/music">Music</Link>
              <Link className="navbutton" to="/water">Water</Link>
              <Link className="navbutton" to="/exer">Exercises</Link>
+             
+             
              
              &nbsp;&nbsp;
              

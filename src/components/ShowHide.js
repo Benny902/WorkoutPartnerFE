@@ -19,7 +19,7 @@ class ShowHide extends React.Component {
     // change code below this line
     return (
       <div>
-        <button className="button3" onClick={this.toggleDisplay}>⮟⌚⏰⮟</button>
+        <button className="button3" onClick={this.toggleDisplay}>↓⌚⏰↓</button>
         {this.state.display && 
         <div>
 
