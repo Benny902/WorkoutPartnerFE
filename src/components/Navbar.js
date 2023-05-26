@@ -31,7 +31,7 @@ const Navbar = () => {
     <header>
       <div className="container">
       <div className="container">
-      <img src={Logo} alt="logo" className="photo" style={{width: 110,height: 110}}/>
+      <img src={Logo} alt="logo" className="photo" style={{marginRight: 40, width: 110,height: 110}}/>
         <Link to="/">  
           <h1 >Workout&nbsp;Partner</h1>
           <button className="button2" onClick={myFunction}>{buttonText}</button>

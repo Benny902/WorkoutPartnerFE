@@ -34,7 +34,7 @@ const Navbar2 = () => {
   return (
     <header className="main-header">
       <a href="/" className="brand-logo">
-      <img src={Logo} alt="logo" className="photo" style={{width: 51,height: 51}}/>
+      <img src={Logo} alt="logo" className="photo" style={{marginRight: 5, width: 51,height: 51}}/>
         <div className="brand-logo-name">
           <h1>Workout&nbsp;Partner</h1>
         </div>
