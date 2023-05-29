@@ -39,11 +39,10 @@ const App = () => {
         <button onClick={handleBmi} >Calculate</button>
         <h2 className=" text-white font-bold text-lg">Your BMI is: {bmi}</h2>
         <h3>Which means you are <span>{info}!</span></h3>
-      <Link to="/">
-      <p>&lt; Go back</p>
-      </Link>
+  
       <p><a href="https://en.wikipedia.org/wiki/Body_mass_index" 
       target="blank">Learn more on BMI (wikipedia) &gt;</a></p>
+      <img style={{ width: "80%", height: "50%" }} src="https://www.healthequalsfreedom.com/wp-content/uploads/2019/03/BMI-Chart.gif" alt="" />
     </div>
   
     </>
