@@ -25,7 +25,7 @@ const App = () => {
     <>
     <div className="login">
         <h2 className="">BMI Calculator</h2>
-          <input type="number" className="" placeholder="Age" />
+          
           <input className=""
             type="text"
             onChange={(e) => setHeight(e.target.value)}
@@ -43,8 +43,9 @@ const App = () => {
       <p>&lt; Go back</p>
       </Link>
       <p><a href="https://en.wikipedia.org/wiki/Body_mass_index" 
-      target="blank">Learn more on BMI &gt;</a></p>
+      target="blank">Learn more on BMI (wikipedia) &gt;</a></p>
     </div>
+  
     </>
   );
 };
