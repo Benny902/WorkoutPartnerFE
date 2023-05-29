@@ -6,7 +6,8 @@ const Login = () => {
 
   return (
     <div className="music" >
-<Music/>
+    <h2>Music</h2>
+      <Music/>
     </div>
   )
 }
