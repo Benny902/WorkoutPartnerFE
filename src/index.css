@@ -217,7 +217,7 @@ header a {
   padding: 20px;
 }
 
-@media screen and (min-width:652px) { /*Desktop*/
+@media screen and (min-width:1922px) { /*Desktop*/
   .nav2 {
     display:none;
   }
@@ -252,7 +252,7 @@ header a {
     padding-bottom: 10px;
   }
 }
-@media screen and (max-width:651px) { /*Phone*/
+@media screen and (max-width:1921px) { /*Phone*/
   .nav {
     display:none;
   }
