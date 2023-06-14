@@ -18,7 +18,15 @@ class ShowHideBmi extends React.Component {
     // change code below this line
     return (
       <div>
-        <button className="button3" onClick={this.toggleDisplay}>Bmi</button>
+
+    <div style={{textAlign: 'center',display: 'flex', flexDirection: 'row',justifyContent:'space-evenly'}}>
+          
+    <button className="button3" onClick={this.toggleDisplay}>Bmi</button>
+      
+      </div>
+        
+
+
         {this.state.display && 
         <div>
 

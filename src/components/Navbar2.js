@@ -43,6 +43,7 @@ const Navbar2 = () => {
         <div className="brand-logo-name">
           <h1>Workout&nbsp;Partner</h1>
         </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       </a>
       
       <div href="#" className="toggle-button" onClick={Click}>
@@ -56,14 +57,14 @@ const Navbar2 = () => {
         {user && (
             <div>
               <ul>
+              <button className="button2" onClick={myFunction}>{buttonText}</button>
               ⸻⸻⸻
               <span>{user.email}<button className="navbutton" onClick={handleClick}>Log out</button></span>
               ⸻⸻⸻
-             <button className="button2" onClick={myFunction}>{buttonText}</button>
              <ShowHide style={{cursor:'pointer'}}/>
-             <ShowHideBmi style={{cursor:'pointer'}}/>
              <ShowHideMusic style={{cursor:'pointer'}}/>
              <ShowHideWater style={{cursor:'pointer'}}/>
+             <ShowHideBmi style={{cursor:'pointer'}}/>
              <ShowHideExer style={{cursor:'pointer'}}/>
              </ul>
             </div>
@@ -73,16 +74,15 @@ const Navbar2 = () => {
             
               <ul>
               <button className="button2" onClick={myFunction}>{buttonText}</button>
-              <ShowHide style={{cursor:'pointer'}}/>
              <div>⸻⸻⸻</div>
               <Link className="navbutton" to="/login">Login</Link>
               <Link className="navbutton" to="/signup">Signup</Link>
               <div>⸻⸻⸻</div>
-             <Link className="navbutton" to="/">Home</Link>
-             <Link className="navbutton" to="/bmi">BMI</Link>
-             <Link className="navbutton" to="/music">Music</Link>
-             <Link className="navbutton" to="/water">Water</Link>
-             <Link className="navbutton" to="/exer">Exercises</Link>
+              <ShowHide style={{cursor:'pointer'}}/>
+             <ShowHideMusic style={{cursor:'pointer'}}/>
+             <ShowHideWater style={{cursor:'pointer'}}/>
+             <ShowHideBmi style={{cursor:'pointer'}}/>
+             <ShowHideExer style={{cursor:'pointer'}}/>
              </ul>
             </div>
           )}

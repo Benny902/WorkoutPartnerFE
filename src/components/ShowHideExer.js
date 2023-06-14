@@ -18,7 +18,9 @@ class ShowHideExer extends React.Component {
     // change code below this line
     return (
       <div>
+        <div style={{textAlign: 'center',display: 'flex', flexDirection: 'row',justifyContent:'space-evenly'}}>
         <button className="button3" onClick={this.toggleDisplay}>Exercises</button>
+        </div>
         {this.state.display && 
         <div>
 
