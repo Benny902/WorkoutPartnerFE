@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container2">
       <div className="footer">
         Created by: Benny & Ruslan 
-        <br/> This web app is part of our graduation thesis
+        <br/> This web app is part of our graduation Final Project
         <br/>
         
         <a href={"https://github.com/Benny902/WorkoutPartner"}>&nbsp;Github</a>
