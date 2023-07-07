@@ -1,3 +1,12 @@
+# Workout Partner
+### App for our graduation Final Project
+### By: Ruslan & Benny
+### Final project presentation video: https://www.youtube.com/watch?v=ZkIkzOGMfUU
+### Link to the Web app: https://workoutpartners.herokuapp.com
+
+#### MERN-app [MongoDB, Express, React, Node]
+#### More detailes on the steps can be found here: https://github.com/Benny902/WorkoutPartner
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
