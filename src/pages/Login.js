@@ -33,8 +33,8 @@ const Login = () => {
       {error && <div className="error">{error}</div>}
 
       <label> </label>
-      <label>Dont have a user?: <Link className="" to="/signup">Signup </Link></label>
-      
+      <label>Dont have a user?  <Link className="" to="/signup"> Signup </Link></label>
+       
 
     </form>
   )

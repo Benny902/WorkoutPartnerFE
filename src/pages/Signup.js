@@ -35,7 +35,7 @@ const Signup = () => {
 
 
       <label> </label>
-      <label>Already have a user?: <Link className="" to="/login">Login </Link></label>
+      <label>Already have a user?  <Link className="" to="/login">Login </Link></label>
     </form>
   )
 }
