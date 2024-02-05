@@ -499,3 +499,9 @@ form.signup, form.login {
 .photo {
   filter: sepia(1%) saturate(1%) brightness(999%) hue-rotate(1deg);
 }
+
+@media screen and (max-width:430px) { /*small screens*/
+h1{
+  font-size: 25px;
+}
+}
